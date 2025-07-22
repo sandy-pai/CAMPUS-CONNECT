@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Connect - Engineering College Directory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1><img src=images/nitte-nmamit-logo.png alt="Site Logo" width="450" height="60"></h1>
+                    <span class="tagline">CAMPUS CONNECT : Engineering College Directory</span>
+                </div>
+                <nav class="nav">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#blocks" class="nav-link">Blocks</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main id="home">
+        <!-- Home Page -->
+        <section id="home-page" class="home-page">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="hero-text">
+                            <h2>Welcome to Campus Connect</h2>
+                            <p>Your comprehensive navigation system for our engineering college campus. Find faculty offices, classrooms, labs, and administrative services with ease.</p>
+                            <div class="hero-stats">
+                                <div class="stat">
+                                    <span class="stat-number">5</span>
+                                    <span class="stat-label">Academic Blocks</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">80+</span>
+                                    <span class="stat-label">Classrooms & Labs</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">100+</span>
+                                    <span class="stat-label">Faculty Offices</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-image">
+                            <img src="images/campus.jpeg" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Search Section -->
+            <section class="search-section">
+                <div class="container">
+                    <div class="search-container">
+                        <h3>Find Faculty or Classrooms</h3>
+                        <div class="search-box">
+                            <input type="text" id="search-input" placeholder="Search for faculty names, room numbers, or departments..." />
+                            <button id="search-btn" class="btn btn--primary">Search</button>
+                        </div>
+                        <div id="search-results" class="search-results hidden"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Academic Blocks Section -->
+            <section class="blocks-section" id="blocks">
+                <div class="container">
+                    <h3>Academic Blocks</h3>
+                    <div class="blocks-grid" id="blocks-grid">
+                        <!-- Blocks will be populated by JavaScript -->
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Block Detail Page -->
+        <section id="block-page" class="block-page hidden">
+            <div class="container">
+                <div class="block-header">
+                    <button id="back-btn" class="btn btn--secondary">← Back to Home</button>
+                    <div class="block-info">
+                        <img id="block-image" src="" alt="" class="block-image" />
+                        <div class="block-details">
+                            <h2 id="block-name"></h2>
+                            <p id="block-description"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="floors-section">
+                    <h3>Select Floor</h3>
+                    <div class="floors-buttons">
+                        <button class="floor-btn" data-floor="ground">Ground Floor</button>
+                        <button class="floor-btn" data-floor="first">First Floor</button>
+                        <button class="floor-btn" data-floor="second">Second Floor</button>
+                        <button class="floor-btn" data-floor="third">Third Floor</button>
+                    </div>
+                </div>
+
+                <div class="rooms-section">
+                    <h3 id="floor-title">Select a floor to view rooms</h3>
+                    <div id="rooms-grid" class="rooms-grid"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Campus Connect</h4>
+                    <p>Your comprehensive campus navigation system</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home" class="nav-link">Home</a></li>
+                        <li><a href="#blocks" class="nav-link">Academic Blocks</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Engineering College<br>123 Campus Drive<br>Phone: (555) 123-4567<br>Email: info@college.edu</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Campus Connect. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
